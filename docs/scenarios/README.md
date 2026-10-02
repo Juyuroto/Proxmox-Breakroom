@@ -9,6 +9,7 @@ Les notions seront mises à jour à chaque scénario réussi.
 | Difficulté | Scénario | Notions |
 |---|---|---|
 | facile | [Alice ne peut plus se connecter](user-locked-1.md) | `passwd -S`, `passwd -u`, `/etc/shadow` |
+| facile | [Alice ne peut plus se connecter](user-locked-2.md) | `ls -l`, `chown`, propriétaire d'un dossier |
 | facile | [La commande report ne marche plus](script-broken.md) | ... |
 | facile | [Le disque est plein](disk-full-log.md) | ... |
 | facile | [Le site web est en panne](nginx-down.md) | ... |

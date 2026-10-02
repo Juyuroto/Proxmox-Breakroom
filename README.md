@@ -13,8 +13,10 @@ J'ai créé ce projet pour m'entraîner au dépannage DevOps / cloud.
 - **45 scénarios** : 27 pannes et 18 tâches, en 3 niveaux (facile, moyen, difficile)
 - Pannes **aléatoires** : la plupart des scénarios ont plusieurs variantes
 - Mode **« Panne au hasard »** : le titre reste caché jusqu'à la résolution
-- Terminal web, bouton **Vérifier**, indices, chrono
-- **Auto-test** : chaque scénario est cassé puis réparé automatiquement pour vérifier qu'il fonctionne
+- Terminal web, bouton **Vérifier**, chrono
+- **Indices progressifs**, et la **solution** de référence en cas d'abandon
+- **Historique et stats** : meilleurs temps, indices utilisés, dernières parties
+- **Auto-test** chaque semaine : chaque variante de chaque scénario est cassée puis réparée automatiquement pour vérifier qu'elle fonctionne
 
 ## Fonctionnement
 
@@ -47,4 +49,4 @@ Le site pilote Proxmox via un jeton API aux droits limités, et entre dans le co
 3. Attendre ~30 s que le serveur soit créé et cassé
 4. Réparer depuis le terminal de la page, ou avec **Copier SSH** depuis son propre terminal
 5. Cliquer sur **Vérifier** : le chrono s'arrête si c'est résolu
-6. **Indice** si on bloque, **Recommencer** pour repartir de zéro, **Arrêter** pour détruire le serveur
+6. **Indice** si on bloque (un à la fois), **Solution** si on abandonne, **Recommencer** pour repartir de zéro, **Arrêter** pour détruire le serveur
