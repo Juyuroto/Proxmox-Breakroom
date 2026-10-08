@@ -14,4 +14,9 @@ Seuls les scénarios que j'ai résolus apparaissent ici : la fiche est écrite a
 | facile | [Le disque est plein](disk-full-log.md) | — | `df`, `du`, `lsof +L1`, `truncate`, fichier supprimé mais ouvert |
 | facile | [Le site web est en panne](nginx-down-1.md) | 3/3 | `nginx -t`, `error.log`, erreur 403, `chmod 644`, utilisateur `www-data` |
 | moyen | [La boutique conteneurisée est injoignable](docker-port-1.md) | 4/4 | `docker ps`, `docker port`, `-p`, `0.0.0.0` vs `127.0.0.1` |
-disk-full-log-1
+
+## Tâches
+
+| Difficulté | Scénario | Variante | Notions |
+|---|---|---|---|
+| moyen | [Analyser des logs](analyser-des-logs.md) | — | `grep -Eo` (IP par regex), `sort \| uniq -c \| sort -rn`, champ `$9` vs `grep`, `wc -l` |
