@@ -1,12 +1,14 @@
 # proxmox-breakroom
 
-Un labo de dépannage Linux façon [SadServers](https://sadservers.com), qui tourne chez soi sur Proxmox.
+Un labo de dépannage Linux façon [SadServers](https://sadservers.com) et [Hack The Box](https://www.hackthebox.com/), qui tourne chez soi sur Proxmox.
 
 Le principe : on clique sur un scénario, un conteneur LXC neuf est créé **déjà cassé** (service en panne, disque plein, DNS faux…), et on le répare depuis un terminal dans le navigateur ou via ssh. Un bouton vérifie si c'est réglé.
 
 J'ai créé ce projet pour m'entraîner au dépannage DevOps / cloud.
 
 ![Interface de proxmox-breakroom](pictures/screenshot.png)
+
+![Interface de proxmox-breakroom vu dans le challenges](pictures/screenshot-1.png)
 
 ## Fonctionnalités
 
