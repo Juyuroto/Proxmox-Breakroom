@@ -1,6 +1,6 @@
 # 404 sur toutes les pages
 
-**Type :** Panne · **Difficulté :** facile · **Dossier :** `challenges/depannage/nginx-404/`
+**Type :** Panne · **Difficulté :** facile
 
 ## Énoncé
 

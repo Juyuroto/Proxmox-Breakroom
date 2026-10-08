@@ -1,12 +1,12 @@
 # Le site web est en panne
 
-**Type :** Panne · **Difficulté :** facile · **Dossier :** `scenarios/nginx-down/`
+**Type :** Panne · **Difficulté :** facile
 
 ## Énoncé
 
 Ticket : « Le site de l'entreprise (`http://localhost`) ne fonctionne plus. »
 
-Objectif : la page d'accueil Nginx s'affiche, et le site revient tout seul après un redémarrage du serveur.
+Objectif : La page d'accueil Nginx s'affiche, et le site revient tout seul après un redémarrage du serveur.
 
 ## Ce qui est cassé
 

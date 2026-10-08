@@ -4,7 +4,9 @@
 
 ## Énoncé
 
-Le compte de alice ne fonctionne plus. Il faut le rendre de nouveau utilisable.
+Ticket : « Le compte de alice ne fonctionne plus depuis ce matin. »
+
+Objectif: Le compte alice est de nouveau utilisable normalement.
 
 ## Ce qui est cassé
 

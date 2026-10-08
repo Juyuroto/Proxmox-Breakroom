@@ -1,6 +1,6 @@
 # La boutique conteneurisée est injoignable
 
-**Type :** Panne · **Difficulté :** moyen · **Dossier :** `challenges/depannage/docker-port/`
+**Type :** Panne · **Difficulté :** moyen
 
 ## Énoncé
 

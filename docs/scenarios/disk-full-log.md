@@ -1,6 +1,6 @@
 # Le disque est plein
 
-**Type :** Panne · **Difficulté :** facile · **Dossier :** `challenges/depannage/disk-full-log/`
+**Type :** Panne · **Difficulté :** facile
 
 ## Énoncé
 

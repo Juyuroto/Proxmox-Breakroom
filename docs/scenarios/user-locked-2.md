@@ -4,7 +4,9 @@
 
 ## Énoncé
 
-Le dossier `/home/alice` appartient à root (droits `700`) : alice ne peut plus y entrer.
+Ticket : « Le compte de alice ne fonctionne plus depuis ce matin. »
+
+Objectif: Le compte alice est de nouveau utilisable normalement.
 
 ## Ce qui est cassé
 
