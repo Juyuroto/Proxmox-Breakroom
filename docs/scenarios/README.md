@@ -19,4 +19,5 @@ Seuls les scénarios que j'ai résolus apparaissent ici : la fiche est écrite a
 
 | Difficulté | Scénario | Variante | Notions |
 |---|---|---|---|
+| facile | [Retrouver un fichier égaré](tache-find-secret.md) | — | `grep -r`, `grep -l`, motif `prod-` vs `test-`, sortie `chemin:ligne` |
 | moyen | [Analyser des logs](analyser-des-logs.md) | — | `grep -Eo` (IP par regex), `sort \| uniq -c \| sort -rn`, champ `$9` vs `grep`, `wc -l` |
