@@ -10,9 +10,13 @@ J'ai créé ce projet pour m'entraîner au dépannage DevOps / cloud.
 
 ## Fonctionnalités
 
-- **45 scénarios** : 27 pannes et 18 tâches, en 3 niveaux (facile, moyen, difficile)
+- **52 scénarios** : 33 pannes et 19 tâches, en 3 niveaux (facile, moyen, difficile)
 - Pannes **aléatoires** : la plupart des scénarios ont plusieurs variantes
 - Mode **« Panne au hasard »** : le titre reste caché jusqu'à la résolution
+- **Scénarios multi-serveurs** : plusieurs conteneurs (ex. `web` + `db`), un onglet de terminal par machine
+- **Scénarios conteneurs** : dépannage de services Podman (conteneur tombé, redémarrage en boucle, conteneuriser un service)
+- **Sabotage** : sur certaines tâches, une fois le travail validé, le labo casse ce que je viens de construire — à réparer sur ma propre configuration
+- **Filtre et stats par thème** (réseau, systemd, web…) pour repérer mes points faibles
 - Terminal web, bouton **Vérifier**, chrono
 - **Indices progressifs**, et la **solution** de référence en cas d'abandon
 - **Historique et stats** : meilleurs temps, indices utilisés, dernières parties

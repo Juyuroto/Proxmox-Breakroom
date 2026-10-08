@@ -4,58 +4,66 @@ Une fiche par scénario (énoncé, causes, pistes, notions, solution).
 
 Les notions seront mises à jour à chaque scénario réussi.
 
-## Pannes (27)
+## Pannes (34)
 
 | Difficulté | Scénario | Notions |
 |---|---|---|
 | facile | [Alice ne peut plus se connecter](user-locked-1.md) | `passwd -S`, `passwd -u`, `/etc/shadow` |
 | facile | [Alice ne peut plus se connecter](user-locked-2.md) | `ls -l`, `chown`, propriétaire d'un dossier |
-| facile | [La commande report ne marche plus](script-broken.md) | ... |
-| facile | [Le disque est plein](disk-full-log.md) | ... |
-| facile | [Le site web est en panne](nginx-down.md) | ... |
-| facile | [Le tableau de bord est injoignable](app-bind.md) | ... |
-| facile | [Permission denied dans /tmp](tmp-perms.md) | ... |
-| facile | [localhost ne répond plus](localhost-broken.md) | ... |
-| moyen | [502 Bad Gateway sur l'API](nginx-502.md) | ... |
-| moyen | [Disque plein fantôme](disk-full.md) | ... |
-| moyen | [Impossible d'envoyer des fichiers](upload-413.md) | ... |
-| moyen | [L'application n'accède plus à sa base](pg-access.md) | ... |
-| moyen | [L'intranet affiche la mauvaise page](nginx-vhost-broken.md) | ... |
-| moyen | [La base de données ne démarre plus](postgres-down.md) | ... |
-| moyen | [La sauvegarde ne tourne plus](cron-backup.md) | ... |
-| moyen | [Le nettoyage automatique ne tourne plus](timer-broken.md) | ... |
-| moyen | [Le rapport automatique n'est plus généré](cron-env.md) | ... |
-| moyen | [Le serveur rame](cpu-hog.md) | ... |
-| moyen | [Le service interne ne démarre plus](app-service.md) | ... |
-| moyen | [Plus d'accès à Internet](net-no-route.md) | ... |
-| moyen | [apt n'arrive plus à télécharger](dns-broken.md) | ... |
-| moyen | [apt update est en erreur](apt-broken.md) | ... |
-| moyen | [sudo ne marche plus pour deploy](sudo-broken.md) | ... |
-| moyen | [« No space left on device »](inodes.md) | ... |
-| difficile | [Erreur de sécurité HTTPS](cert-expired.md) | ... |
-| difficile | [Incident : le site et l'API sont tombés](incident-api.md) | ... |
-| difficile | [Le worker redémarre en boucle](worker-env.md) | ... |
-| difficile | [Too many open files](fd-limit.md) | ... |
+| facile | La commande report ne marche plus | ... |
+| facile | [Le disque est plein](disk-full-log.md) | `df`, `du`, `lsof +L1`, `truncate`, fichier supprimé mais ouvert |
+| facile | [Le site web est en panne](nginx-down-1.md) | ... |
+| facile | Le tableau de bord est injoignable | ... |
+| facile | Permission denied dans /tmp | ... |
+| facile | localhost ne répond plus | ... |
+| moyen | 502 Bad Gateway sur l'API | ... |
+| moyen | Disque plein fantôme | ... |
+| moyen | Impossible d'envoyer des fichiers | ... |
+| moyen | L'application n'accède plus à sa base | ... |
+| moyen | L'intranet affiche la mauvaise page | ... |
+| moyen | La base de données ne démarre plus | ... |
+| moyen | La sauvegarde ne tourne plus | ... |
+| moyen | Le nettoyage automatique ne tourne plus | ... |
+| moyen | Le rapport automatique n'est plus généré | ... |
+| moyen | Le serveur rame | ... |
+| moyen | Le service interne ne démarre plus | ... |
+| moyen | Plus d'accès à Internet | ... |
+| moyen | apt n'arrive plus à télécharger | ... |
+| moyen | apt update est en erreur | ... |
+| moyen | sudo ne marche plus pour deploy | ... |
+| moyen | « No space left on device » | ... |
+| moyen | Le moteur de recherche tombe en boucle | ... |
+| moyen | [La boutique conteneurisée est injoignable](docker-port-1.md) | `docker ps`, `docker port`, `-p`, `0.0.0.0` vs `127.0.0.1` |
+| moyen | Le site conteneurisé est tombé | ... |
+| moyen | Le site est inaccessible depuis le réseau | ... |
+| difficile | Activité suspecte sur le serveur | ... |
+| difficile | Le conteneur de l'API redémarre en boucle | ... |
+| difficile | Erreur de sécurité HTTPS | ... |
+| difficile | Incident : le site et l'API sont tombés | ... |
+| difficile | L'application ne joint plus sa base | ... |
+| difficile | Le worker redémarre en boucle | ... |
+| difficile | Too many open files | ... |
 
-## Tâches (18)
+## Tâches (19)
 
 | Difficulté | Scénario | Notions |
 |---|---|---|
-| facile | [Base de données pour une appli](tache-postgres-db.md) | ... |
-| facile | [Compte de déploiement](tache-sudo-user.md) | ... |
-| facile | [Durcir SSH](tache-ssh-hardening.md) | ... |
-| facile | [Planifier une tâche](tache-cron-job.md) | ... |
-| facile | [Retrouver un fichier égaré](tache-find-secret.md) | ... |
-| facile | [Rotation des logs](tache-logrotate.md) | ... |
-| facile | [Régler le fuseau horaire](tache-timezone.md) | ... |
-| moyen | [Accès SSH par clé](tache-ssh-key-user.md) | ... |
-| moyen | [Analyser des logs](tache-log-analysis.md) | ... |
-| moyen | [Dossier partagé d'équipe](tache-shared-folder.md) | ... |
-| moyen | [Exposer une API derrière Nginx](tache-reverse-proxy.md) | ... |
-| moyen | [Héberger deux sites](tache-nginx-vhosts.md) | ... |
-| moyen | [Passer le site en HTTPS](tache-https.md) | ... |
-| moyen | [Protéger une page par mot de passe](tache-basic-auth.md) | ... |
-| moyen | [Restaurer une table supprimée](tache-db-restore.md) | ... |
-| moyen | [Script de supervision](tache-healthcheck-script.md) | ... |
-| moyen | [Transformer un script en service](tache-systemd-service.md) | ... |
-| difficile | [Sauvegardes avec rotation](tache-backup-rotation.md) | ... |
+| facile | Base de données pour une appli · 🔧 sabotage | ... |
+| facile | Compte de déploiement | ... |
+| facile | Durcir SSH | ... |
+| facile | Planifier une tâche | ... |
+| facile | Retrouver un fichier égaré | ... |
+| facile | Rotation des logs | ... |
+| facile | Régler le fuseau horaire | ... |
+| moyen | Accès SSH par clé | ... |
+| moyen | Analyser des logs | ... |
+| moyen | Conteneuriser un service web | ... |
+| moyen | Dossier partagé d'équipe | ... |
+| moyen | Exposer une API derrière Nginx · 🔧 sabotage | ... |
+| moyen | Héberger deux sites · 🔧 sabotage | ... |
+| moyen | Passer le site en HTTPS · 🔧 sabotage | ... |
+| moyen | Protéger une page par mot de passe | ... |
+| moyen | Restaurer une table supprimée | ... |
+| moyen | Script de supervision | ... |
+| moyen | Transformer un script en service · 🔧 sabotage | ... |
+| difficile | Sauvegardes avec rotation | ... |
