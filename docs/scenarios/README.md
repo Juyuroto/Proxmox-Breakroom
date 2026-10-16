@@ -15,6 +15,7 @@ Seuls les scénarios que j'ai résolus apparaissent ici : la fiche est écrite a
 | facile | [Impossible de créer des fichiers dans un dossier](dossier-ecriture-2.md) | 1/3 | `lsattr -d`, `chattr -i`, attribut immuable, `Operation not permitted` contre `Permission denied` |
 | facile | [Impossible de créer des fichiers dans un dossier](dossier-ecriture.md) | 3/3 | `sudo -u`, `ls -ld`, `chown`, droits vs `chattr` vs montage `ro` |
 | facile | [Connexion refusée sur le site](nginx-port.md) | — | `ss -ltnp`, directive `listen`, connexion refusée contre service arrêté, `nginx -t`, `reload` |
+| facile | [Le timer ne met plus à jour le log de santé](timer-sante-1.md) | 2/3 | `systemctl status` du timer et du service, `journalctl -u`, `Permission denied` sur l'exécution, `chmod +x` |
 | facile | [Le disque est plein](disk-full-log.md) | — | `df`, `du`, `lsof +L1`, `truncate`, fichier supprimé mais ouvert |
 | facile | [Le site web est en panne](nginx-down-1.md) | 3/3 | `nginx -t`, `error.log`, erreur 403, `chmod 644`, utilisateur `www-data` |
 | moyen | [La boutique conteneurisée est injoignable](docker-port-1.md) | 4/4 | `docker ps`, `docker port`, `-p`, `0.0.0.0` vs `127.0.0.1` |
