@@ -12,6 +12,7 @@ Seuls les scénarios que j'ai résolus apparaissent ici : la fiche est écrite a
 | facile | [Alice ne peut plus se connecter](user-locked-1.md) | 1/4 | `passwd -S`, `passwd -u`, `/etc/shadow` |
 | facile | [Alice ne peut plus se connecter](user-locked-3.md) | 2/4 | `passwd -S`, `chage -l`, `chage -E -1`, expiration du compte contre expiration du mot de passe |
 | facile | [Alice ne peut plus se connecter](user-locked-2.md) | 4/4 | `ls -l`, `chown`, propriétaire d'un dossier |
+| facile | [Impossible de créer des fichiers dans un dossier](dossier-ecriture-2.md) | 1/3 | `lsattr -d`, `chattr -i`, attribut immuable, `Operation not permitted` contre `Permission denied` |
 | facile | [Impossible de créer des fichiers dans un dossier](dossier-ecriture.md) | 3/3 | `sudo -u`, `ls -ld`, `chown`, droits vs `chattr` vs montage `ro` |
 | facile | [Le disque est plein](disk-full-log.md) | — | `df`, `du`, `lsof +L1`, `truncate`, fichier supprimé mais ouvert |
 | facile | [Le site web est en panne](nginx-down-1.md) | 3/3 | `nginx -t`, `error.log`, erreur 403, `chmod 644`, utilisateur `www-data` |
