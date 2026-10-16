@@ -1,6 +1,6 @@
 # Alice ne peut plus se connecter
 
-**Type :** Panne · **Difficulté :** facile · **Variante :** 2/4
+**Type :** Panne · **Difficulté :** facile
 
 ## Énoncé
 
